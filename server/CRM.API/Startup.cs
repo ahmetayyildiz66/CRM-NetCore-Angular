@@ -5,6 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.HttpOverrides;
+using NLog;
+using System.IO;
+using CRM.Common.Logging.Contract;
+using CRM.Common.Logging;
 
 namespace CRM.API
 {
@@ -12,6 +16,7 @@ namespace CRM.API
     {
         public Startup(IConfiguration configuration)
         {
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
@@ -23,6 +28,8 @@ namespace CRM.API
             services.ConfigureCors();
 
             services.ConfigureIISIntegration();
+
+            services.ConfigureLoggerService();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

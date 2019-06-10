@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{84BA32E6-A3FB-4974-BC39-28E723DB52BF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Common.Logging.Contract", "CRM.Common.Logging.Contract\CRM.Common.Logging.Contract.csproj", "{1E1D013C-6712-4AEC-8EDF-6F3B9EDFADBE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{989EB0AF-DE5A-4329-9CE2-CA53D3DCF591}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.API", "CRM.API\CRM.API.csproj", "{E30012DC-A030-4CF6-91FF-DB4C7AD4FF05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5230A0F2-BD95-4533-9138-A1776F17DA97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Common.Contracts", "CRM.Common.Logging.Contract\CRM.Common.Contracts.csproj", "{43BD2C20-F975-47CD-816E-8CED4AFA132E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Common.Logging", "CRM.Common.Logging\CRM.Common.Logging.csproj", "{098F9BD6-A66C-4AE0-97B0-5733573A5D39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,21 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1E1D013C-6712-4AEC-8EDF-6F3B9EDFADBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E1D013C-6712-4AEC-8EDF-6F3B9EDFADBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E1D013C-6712-4AEC-8EDF-6F3B9EDFADBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E1D013C-6712-4AEC-8EDF-6F3B9EDFADBE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E30012DC-A030-4CF6-91FF-DB4C7AD4FF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E30012DC-A030-4CF6-91FF-DB4C7AD4FF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E30012DC-A030-4CF6-91FF-DB4C7AD4FF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E30012DC-A030-4CF6-91FF-DB4C7AD4FF05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43BD2C20-F975-47CD-816E-8CED4AFA132E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43BD2C20-F975-47CD-816E-8CED4AFA132E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43BD2C20-F975-47CD-816E-8CED4AFA132E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43BD2C20-F975-47CD-816E-8CED4AFA132E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098F9BD6-A66C-4AE0-97B0-5733573A5D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098F9BD6-A66C-4AE0-97B0-5733573A5D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098F9BD6-A66C-4AE0-97B0-5733573A5D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098F9BD6-A66C-4AE0-97B0-5733573A5D39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{1E1D013C-6712-4AEC-8EDF-6F3B9EDFADBE} = {84BA32E6-A3FB-4974-BC39-28E723DB52BF}
 		{E30012DC-A030-4CF6-91FF-DB4C7AD4FF05} = {989EB0AF-DE5A-4329-9CE2-CA53D3DCF591}
+		{43BD2C20-F975-47CD-816E-8CED4AFA132E} = {5230A0F2-BD95-4533-9138-A1776F17DA97}
+		{098F9BD6-A66C-4AE0-97B0-5733573A5D39} = {5230A0F2-BD95-4533-9138-A1776F17DA97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8D0B99C-9574-45A7-974E-A1C0CE47B412}
