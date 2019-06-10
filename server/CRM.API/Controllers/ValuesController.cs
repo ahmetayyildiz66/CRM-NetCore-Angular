@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CRM.Common.Logging.Contract;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRM.API.Controllers
@@ -10,10 +11,20 @@ namespace CRM.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly ILoggerManager _logger;
+
+        public ValuesController(ILoggerManager logger)
+        {
+            _logger = logger;
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            _logger.LogInfo("Here is info message from our values controller.");
+            _logger.LogDebug("Here is debug message from our values controller.");
+            _logger.LogWarn("Here is warn message from our values controller.");
             return new string[] { "value1", "value2" };
         }
 
